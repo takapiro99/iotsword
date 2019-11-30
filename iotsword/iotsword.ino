@@ -158,12 +158,12 @@ void wifi() {
                           "<tr><td><button class='btn'style='background-color:#9932cc;'onclick='send(\"c\")'>Party</button></td><td><button class='btn'style='background-color:#cd5c5c;'onclick='send(\"d\")'>Lava</button></td></tr><tr><td><button class='btn'style='background-color:#1e90ff;'onclick='send(\"e\")'>Ocean</button></td>"
                           "<td><button class='btn'style='background-color:#ffa07a;'onclick='send(\"f\")'>Rainbow</button></td></tr><tr><td><button class='btn'style='background-color:#c0c0c0;'onclick='send(\"g\")'>?</button></td><td><button class='btn'style='background-color:#c0c0c0;'onclick='send(\"h\")'>random</button></td></tr></tbody></table>"
                           "<div class='wrapper'><div class='selWrapper'><select id='styled'name='styled'><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div></div><br><button class='btn2'style='background-color:#fff;'onclick='col()'>↑番目のLEDを↓の色にする</button>"
-                          "<div class='inp'><br><input type='color'id='rgb2'value='#0000ff'><br></div></body>"
+                          "<div class='inp'><br><input type='color'id='rgb2'value='#0000ff'><br></div>"
                           "<script>function send(ch){var xh=new XMLHttpRequest();xh.onreadystatechange=function(){};xh.open('GET','/'+ch,true);xh.send();}"
                           "function col(){var a=document.getElementById('styled').value;var b=document.getElementById('rgb2').value.substr(1,2);var c=document.getElementById('rgb2').value.substr(3,2);var d=document.getElementById('rgb2').value.substr(5,2);"
                           "var one=String(parseInt(b,16));if(one.length==1){one='00'+one;}if(one.length==2){one='0'+one;}var two=String(parseInt(c,16));if(two.length==1){two='00'+two;}if(two.length==2){two='0'+two;}var three=String(parseInt(d,16));if(three.length==1){three='00'+three;}if(three.length==2){three='0'+three;}"
                           "var xh=new XMLHttpRequest();xh.onreadystatechange=function(){};xh.open('GET','/z/'+a+'/?'+one+two+three+'&',true);xh.send();}"
-                          "</script></html>");
+                          "</script></body></html>");
             // The HTTP response ends with another blank line:
             client.println();
             // break out of the while loop:
