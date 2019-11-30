@@ -1,7 +1,7 @@
 /*
  lightning iot sword project for NT札幌 2019/11/30
 
- Special thanks to these examples and projects I especially refered
+ Special thanks to these examples and projects that I especially referred
   -from FastLED.h  ColorPalette 
   -from WiFi.h  WiFiAccessPoint 
   -ESP32/ESP8266 RGB LED Strip with Color Picker Web Server
